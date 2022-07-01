@@ -38,6 +38,11 @@
             </li>
           </ul>
         </nav>
+        <button type="button" class="mobile-menu-open-btn" data-menu-open>
+          <svg class="mobile-menu-open-btn__icon" width="40" height="40">
+            <use href="./images/sprite.svg#icon-mobile-menu-open-btn"></use>
+          </svg>
+        </button>
         <!-- Контакты-->
         <ul class="header-contacts list">
           <li class="header-contacts__item header-mail-item">
@@ -57,19 +62,67 @@
             </a>
           </li>
         </ul>
+        <div class="mobile-menu" data-menu>
+          <div class="container mobile-menu__container">
+            <button type="button" class="mobile-menu__close-btn" data-menu-close>
+              <svg class="mobile-menu__close-icon" width="40" height="40">
+                <use href="./images/sprite.svg#icon-close-icon"></use>
+              </svg>
+            </button>
+            <ul class="mobile-menu__nav-list list">
+              <li class="mobile-menu__nav-item">
+                <a href="#features" class="mobile-menu__nav-link link">Студия</a>
+              </li>
+              <li class="mobile-menu__nav-item">
+                <a href="./portfolio.html" class="mobile-menu__nav-link link">Портфолио</a>
+              </li>
+              <li class="mobile-menu__nav-item">
+                <a href="#contacts" class="mobile-menu__nav-link link">Контакты</a>
+              </li>
+            </ul>
+            <ul class="mobile-menu__contacts-list list">
+              <li class="mobile-menu__contacts-item">
+                <a href="tel:+380961111111" class="mobile-menu__contacts-link-tel link"
+                  >+38 096 111 11 11</a
+                >
+              </li>
+              <li class="mobile-menu__contacts-item">
+                <a href="mailto:info@devstudio.com" class="mobile-menu__contacts-link-mail link"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+            <ul class="mobile-menu__social-list list">
+              <li class="mobile-menu__social-item">
+                <a href="" class="mobile-menu__social-link link">Instagram</a>
+              </li>
+              <li class="mobile-menu__social-item">
+                <a href="" class="mobile-menu__social-link link">Twitter</a>
+              </li>
+              <li class="mobile-menu__social-item">
+                <a href="" class="mobile-menu__social-link link">Facebook</a>
+              </li>
+              <li class="mobile-menu__social-item">
+                <a href="" class="mobile-menu__social-link link">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
 
     <main>
       <!--Hero-->
+      <!--
       <section class="hero">
         <div class="container hero_container">
           <h1 class="hero_titel">Эффективные решения для вашего бизнеса</h1>
           <button class="modal-btn" type="button" data-modal-open>Заказать услугу</button>
         </div>
       </section>
+    -->
       <!--Особенности-->
-
+      <!--
       <section class="features section" id="features">
         <div class="container features_container">
           <ul class="features_list list">
@@ -120,7 +173,9 @@
           </ul>
         </div>
       </section>
+      -->
       <!--Чем мы занимаемся-->
+      <!--
       <section class="we-do section" id="we_do">
         <div class="container">
           <h2 class="section-titel">Чем мы занимаемся</h2>
@@ -164,7 +219,9 @@
           </ul>
         </div>
       </section>
+      -->
       <!--Наша команда-->
+      <!--
       <section class="team section">
         <div class="container">
           <h2 class="section-titel">Наша команда</h2>
@@ -344,7 +401,9 @@
           </ul>
         </div>
       </section>
+      -->
       <!--Наши клиенты-->
+      <!--
       <section class="section clients">
         <div class="container">
           <h2 class="section-titel">Постоянные клиенты</h2>
@@ -394,16 +453,18 @@
           </ul>
         </div>
       </section>
+      -->
     </main>
-
+    <!--
     <footer class="footer">
       <div class="container footer__container">
-        <div class="footer__contacts">
-          <!--Текстовый логотип-->
-          <a class="logo footer__logo link" href="./index.html"
+        <div class="footer__contacts"> -->
+    <!--Текстовый логотип-->
+    <!-- <a class="logo footer__logo link" href="./index.html"
             >Web<span class="logo_text_white">Studio</span></a
-          >
-          <!--Контактные данные-->
+          >-->
+    <!--Контактные данные-->
+    <!--
           <address class="address" id="contacts">
             <ul class="address__list list">
               <li class="address__item">
@@ -480,7 +541,8 @@
           </div>
         </div>
       </div>
-    </footer>
+    </footer> -->
+    <!--
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-close-btn" data-modal-close>
@@ -549,6 +611,7 @@
         </form>
       </div>
     </div>
-    <script src="./js/modal.js"></script>
+    <script src="./js/modal.js"></script> -->
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
