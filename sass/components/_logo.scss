@@ -24,14 +24,25 @@
   color: #ffffff;
 }
 
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 768px) {
   .page-header__logo {
     padding-top: 26px;
     padding-bottom: 26px;
-  margin-right: 90px }
+    margin-right: 88px }
 }
 
+@media screen and (min-width: 1200px) {
+  .page-header__logo {
+      padding-top: 24px;
+      padding-bottom: 25px;
+      margin-right: 90px
+    }
 
+  .logo {
+    font-size: 26px;
+    line-height: 31px;
+  }
+}
 
 
 /*.page-header__logo {
