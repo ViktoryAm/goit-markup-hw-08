@@ -1272,10 +1272,19 @@ body {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .clients-list__item {
     flex-basis: calc((100% - 90px) / 3);
+    margin-left: 30px;
+    margin-top: 30px;
   }
 
   .clients-list__link {
     width: 226px;
+  }
+
+  .clients-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1345,34 +1354,25 @@ body {
         }
 }
 */
-/*Footer*/
 .footer {
   background-color: var(--main-background-color);
   padding-top: 60px;
   padding-bottom: 60px;
-  display: flex;
 }
 
 .footer__logo {
   display: block;
   margin-bottom: 20px;
+  text-align: center;
 }
 
 .address__item .link {
   display: block;
+  text-align: center;
 }
 
 .address__item:not(:last-child) {
-  margin-bottom: 9px;
-}
-
-.footer__container {
-  display: flex;
-  align-items: baseline;
-}
-
-.footer__contacts {
-  margin-right: 70px;
+  margin-bottom: 8px;
 }
 
 .footer__subtitle {
@@ -1380,15 +1380,24 @@ body {
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #ffffff;
   margin-bottom: 20px;
+  display: block;
+  text-align: center;
+}
+
+.address__list {
+  margin-bottom: 60px;
 }
 
 .footer-social__list {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 60px;
 }
 
 .footer-social__link {
@@ -1399,10 +1408,6 @@ body {
   height: 44px;
   background: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.footer-social__link:hover, .footer-social__link:focus {
-  background-color: var(--accent-color-nav);
 }
 
 .footer-social__item:not(:last-child) {
@@ -1410,10 +1415,9 @@ body {
 }
 
 .footer-social__icon {
-  fill: #FFFFFF;
+  fill: #ffffff;
 }
 
-/*Контактные данные*/
 .address {
   font-style: normal;
 }
@@ -1439,24 +1443,17 @@ body {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.telegramm-form {
-  margin-left: 90px;
-}
-
-.telegramm-form__descriotion {
-  margin-bottom: 20px;
-}
-
 .telegramm-form__input {
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
-  width: 360px;
+  width: 450px;
   height: 50px;
   padding: 15px 16px;
   color: rgba(255, 255, 255, 0.6);
   outline: none;
+  margin-bottom: 20px;
 }
 
 .telegramm-btn {
@@ -1473,17 +1470,6 @@ body {
   border-radius: 4px;
   margin-left: auto;
   margin-right: auto;
-  margin-left: 12px;
-  align-items: center;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.telegramm-btn:hover, .telegramm-btn:focus {
-  background-color: #188ce8;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-}
-
-.telegramm-form__form {
-  display: flex;
   align-items: center;
 }
 
@@ -1491,7 +1477,315 @@ body {
   margin-left: 10px;
 }
 
+@media screen and (min-width: 768px) {
+  .footer {
+    display: flex;
+  }
+
+  .footer__container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: center;
+  }
+
+  .footer-social {
+    margin-left: 165px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__container {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+  }
+
+  .footer__logo {
+    text-align: start;
+  }
+
+  .address__list {
+    margin-bottom: 0;
+  }
+
+  .address__item .link {
+    text-align: start;
+  }
+
+  .footer__subtitle {
+    text-align: start;
+  }
+
+  .footer-social {
+    margin-left: 70px;
+  }
+
+  .footer-social__link {
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .footer-social__link:hover, .footer-social__link:focus {
+    background-color: var(--accent-color-nav);
+  }
+
+  .telegramm-form {
+    margin-left: 90px;
+  }
+
+  .telegramm-form__input {
+    width: 360px;
+    margin-bottom: 0;
+  }
+
+  .telegramm-btn {
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .telegramm-btn:hover, .telegramm-btn:focus {
+    background-color: #188ce8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
+
+  .telegramm-form__form {
+    display: flex;
+    align-items: center;
+  }
+
+  .telegramm-btn {
+    margin-left: 12px;
+  }
+
+  .footer-social__list {
+    margin-bottom: 0;
+  }
+}
+/*Footer*/
+/*
+.footer {
+    background-color: var(--main-background-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
+    display: flex;
+}
+
+.footer__logo {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.address__item .link {
+    display: block;
+}
+
+.address__item:not(:last-child) {
+    margin-bottom: 9px;
+}
+
+.footer__container {
+    display: flex;
+    align-items: baseline;
+}
+
+.footer__contacts {
+    margin-right: 70px;
+}
+
+.footer__subtitle {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+
+    margin-bottom: 20px;
+}
+
+.footer-social__list {
+    display: flex;
+}
+
+.footer-social__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        background-color: var(--accent-color-nav);
+    }
+}
+
+.footer-social__item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.footer-social__icon {
+    fill: #FFFFFF;
+}
+*/
+/*Контактные данные*/
+/*
+.address {
+    font-style: normal;
+}
+
+.address__map {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+
+    color: #ffffff;
+}
+
+.address__mail {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.address__tel {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.telegramm-form {
+    margin-left: 90px;
+}
+
+.telegramm-form__descriotion {
+    margin-bottom: 20px;
+}
+
+.telegramm-form__input {
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    width: 360px;
+    height: 50px;
+    padding: 15px 16px;
+    color: rgba(255, 255, 255, 0.6);
+
+    outline: none;
+}
+
+.telegramm-btn {
+    display: flex;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    color: #ffffff;
+    background-color: var(--accent-color-nav);
+    cursor: pointer;
+    border: transparent;
+    padding: 10px 32px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-left: 12px;
+    align-items: center;
+
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        background-color: #188ce8;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        }
+}
+
+
+
+
+.telegramm-form__form {
+    display: flex;
+    align-items: center;
+}
+
+.telegramm-btn__icon {
+    margin-left: 10px;
+}*/
+.portfolio-nav-btn {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.portfolio-nav-btn__list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: -15px;
+  margin-left: -8px;
+  margin-bottom: 40px;
+}
+
+.portfolio-nav-btn__item {
+  margin-left: 8px;
+  margin-top: 15px;
+}
+
+.portfolio-button {
+  padding: 6px 22px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: #212121;
+  background-color: rgb(245, 244, 250);
+  border: transparent;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.portfolio-button:hover, .portfolio-button:focus {
+  color: #ffffff;
+  background-color: var(--accent-color-nav);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio-nav-btn__list {
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin-top: -8px;
+    margin-left: -8px;
+    margin-bottom: 30px;
+  }
+
+  .portfolio-nav-btn__item {
+    margin-left: 8px;
+    margin-top: 8px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio-nav-btn {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+
+  .portfolio-nav-btn__list {
+    margin-bottom: 50px;
+  }
+}
 /* Навигационные кнопки */
+/*
 .portfolio-nav-btn {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -1518,19 +1812,26 @@ body {
   line-height: 1.63;
   letter-spacing: 0.03em;
   text-align: center;
+
   color: #212121;
-  background-color: rgb(245, 244, 250);
+  background-color: rgba(245, 244, 250, 1);
   border: transparent;
   border-radius: 4px;
   cursor: pointer;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.portfolio-button:hover, .portfolio-button:focus {
-  color: #ffffff;
-  background-color: var(--accent-color-nav);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-}
 
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: #ffffff;
+    background-color: var(--accent-color-nav);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+}
+*/
 /*Все категории портфолио*/
 .categories-list {
   display: flex;

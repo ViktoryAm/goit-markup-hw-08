@@ -1,5 +1,86 @@
-/* Навигационные кнопки */
+.portfolio-nav-btn {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
 
+.portfolio-nav-btn__list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: -15px;
+  margin-left: -8px;
+  margin-bottom: 40px;
+}
+
+.portfolio-nav-btn__item {
+  margin-left: 8px;
+  margin-top: 15px;
+}
+
+.portfolio-button {
+  padding: 6px 22px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  letter-spacing: 0.03em;
+  text-align: center;
+
+  color: #212121;
+  background-color: rgba(245, 244, 250, 1);
+  border: transparent;
+  border-radius: 4px;
+  cursor: pointer;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: #ffffff;
+    background-color: var(--accent-color-nav);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+}
+
+
+@media screen and (min-width: 768px) {
+  .portfolio-nav-btn__list {
+      flex-wrap: nowrap;
+      justify-content: center;
+      margin-top: -8px;
+      margin-left: -8px;
+      margin-bottom: 30px;
+    }
+  
+    .portfolio-nav-btn__item {
+      margin-left: 8px;
+      margin-top: 8px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio-nav-btn {
+      padding-top: 94px;
+      padding-bottom: 94px;
+    }
+
+        .portfolio-nav-btn__list {
+
+          margin-bottom: 50px;
+        }
+}
+
+
+
+
+
+
+
+/* Навигационные кнопки */
+/*
 .portfolio-nav-btn {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -45,3 +126,4 @@
       0px 2px 2px rgba(0, 0, 0, 0.12);
   }
 }
+*/
