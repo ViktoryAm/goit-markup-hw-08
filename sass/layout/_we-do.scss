@@ -1,5 +1,15 @@
-/*Мы занимаемся*/
 
+@media screen and (max-width: 1199px) {
+    .we-do {
+        display: none;
+    }
+}
+
+
+/*Мы занимаемся*/
+.we-do {
+    padding-bottom: 94px;
+}
 .we-do__list {
     display: flex;
     margin-top: -30px;
