@@ -2040,10 +2040,13 @@ body {
 */
 .categories-list {
   display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .categories-img {
   display: block;
+  width: 100%;
 }
 
 .categories-content-wrapper {
