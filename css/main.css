@@ -969,7 +969,7 @@ body {
 }
 .hero_titel {
   display: block;
-  width: 360px;
+  max-width: 360px;
   font-weight: 900;
   font-size: 26px;
   line-height: 1.62;
@@ -1442,6 +1442,7 @@ body {
   .clients-list {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     margin-left: -30px;
     margin-top: -30px;
   }
