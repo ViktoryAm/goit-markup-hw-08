@@ -1,5 +1,5 @@
 /* МОДАЛЬНОЕ ОКНО */
-/*
+
 .backdrop {
     position: fixed;
     top: 0;
@@ -10,13 +10,13 @@
 
     transition: opacity 500ms linear, visibility 500ms linear;
 }
-*/
 
-/*
+
+
 .backdrop.is-hidden {
-    opacity: 0; */
+    opacity: 0; 
     /*делает элемент прозрачным*/
-   /* visibility: hidden;
+   visibility: hidden;
     pointer-events: none;
     /*делают элемент неощутимым для мыши*/
-/*}*/
+}
