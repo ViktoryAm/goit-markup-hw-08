@@ -18,7 +18,7 @@
 
 .hero_titel {
   display: block;
-  max-width: 360px;
+  width: 100%;
   font-weight: 900;
   font-size: 26px;
   line-height: 1.62;
@@ -58,7 +58,17 @@
   }
 }
 
+@media screen and (min-width: 480px) {
+  .hero_titel {
+    width: 480px;
+  }
+
+
+}
+
 @media screen and (min-width: 768px) {
+
+
   .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
       url('../../images/hero/bg_tablet.jpg');
