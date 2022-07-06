@@ -1007,7 +1007,7 @@ body {
 
 @media screen and (min-width: 480px) {
   .hero_titel {
-    width: 480px;
+    width: 360px;
   }
 }
 @media screen and (min-width: 768px) {
