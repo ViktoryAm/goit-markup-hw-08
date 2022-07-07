@@ -1,3 +1,5 @@
+
+
 .modal {
   display: block;
   position: absolute;
@@ -35,6 +37,13 @@
   .modal-close-btn:hover &,
   .modal-close-btn:focus & {
     fill: var(--accent-color-nav);
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .modal {
+    width: 100%;
+
   }
 }
 
