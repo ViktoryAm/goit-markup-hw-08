@@ -42,10 +42,12 @@
 
 @media screen and (max-width: 450px) {
   .modal {
-    width: 100%;
-
-  }
+    width: 100%;}
+.contact-form-checkbox-label {
+flex-wrap: wrap;
 }
+  }
+
 
 @media screen and (min-width: 1200px) {
   .modal {

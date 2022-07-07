@@ -330,6 +330,10 @@ body {
   .modal {
     width: 100%;
   }
+
+  .contact-form-checkbox-label {
+    flex-wrap: wrap;
+  }
 }
 @media screen and (min-width: 1200px) {
   .modal {
